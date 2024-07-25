@@ -15,25 +15,25 @@ function BsNav() {
               <li className="nav-item">
                 <NavLink className="nav-link" aria-current="page" to="/">Home</NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="/counter/10">Counter</NavLink>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Link</a>
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Counter
+                </a>
+                <ul className="dropdown-menu">
+                  <li><NavLink className="dropdown-item" to="/counter/redux">Counter (redux)</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/counter/simple">Counter (simple)</NavLink></li>
+                </ul>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Todo
                 </a>
                 <ul className="dropdown-menu">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  <li><hr className="dropdown-divider" /></li>
-                  <li><a className="dropdown-item" href="#">Something else here</a></li>
+                  <li><NavLink className="dropdown-item" to="/todo/redux">Todo (redux)</NavLink></li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">Disabled</a>
+                <NavLink className="nav-link" to="/online/products">Online Product</NavLink>
               </li>
             </ul>
             <form className="d-flex" role="search">
