@@ -1,0 +1,15 @@
+{
+  "name": "my-react-app",
+  "description": "A React application",
+  "carousel": [
+    {
+      "img": "img01.jpg"
+    },
+    {
+      "img": "img02.jpg"
+    },
+    {
+      "img": "img03.jpg"
+    }
+  ]
+}

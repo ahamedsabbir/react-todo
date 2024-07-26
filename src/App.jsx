@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter, Route, Routes, Link, redirect } from 'react-router-dom'
 import BsNav from './components/BsNav'
+import BsFooter from './components/BsFooter'
 import Home from './views/Home'
 import NotFound from './views/NotFound'
 import CounterRedux from './views/CounterRedux'
@@ -27,6 +28,7 @@ function App() {
           <Route path='/online/product/single/:id' Component={OnlineProductSingle} />
           <Route path='*' Component={NotFound} />
         </Routes>
+        <BsFooter></BsFooter>
       </BrowserRouter>
     </>
   )
